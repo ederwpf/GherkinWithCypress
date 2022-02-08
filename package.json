@@ -1,0 +1,17 @@
+{
+  "requires": true,
+  "lockfileVersion": 1,
+  "devDependencies": {
+    "cypress": "^4.12.1",
+    "cypress-cucumber-preprocessor": "^4.0.1",
+    "cypress-xpath": "^1.6.2"
+  },
+  "scripts": {
+    "test:chrome": "cypress run --browser chrome --no-exit",
+    "cypress:open": "./node_modules/.bin/cypress open",
+    "cypress:run": "./node_modules/.bin/cypress run"
+  },
+  "cypress-cucumber-preprocessor": {
+    "step_definitions": "cypress/support/steps"
+  }
+}
