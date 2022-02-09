@@ -28,3 +28,5 @@ Dado que o usuário inseriu a IDADE e a DATA DE NASCIMENTO
 Dado que o usuário inseriu a QUANTIDADE DE PARCELAS e o VALOR
 Quando for acionado o botão VALIDAR CONTRATO
 Então deve ser exibida notificação de DADOS INVÁLIDOS
+
+Example of commit
