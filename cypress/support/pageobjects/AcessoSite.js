@@ -6,17 +6,18 @@
 class Site {
     acessarSite() {
         cy.server();
-        cy.route('POST', 'https://portal.bancorenault.com.br/portalrci/services/content/getLogo?automaker=RENAULT&userLogged=').as('postLogo');
-        cy.visit('https://portal.bancorenault.com.br/portal/');
-        cy.wait('@postLogo').its('status').should('eq', 200)
+        //cy.route('POST', 'https://portal.bancorenault.com.br/portalrci/services/content/getLogo?automaker=RENAULT&userLogged=').as('postLogo');
+        cy.visit('http://automationpractice.com/index.php');
+        //cy.wait('@postLogo').its('status').should('eq', 200)
+        cy.get('#search_query_top').should('be.visible')
     }
 
     validarPagina() {
-        cy.contains('Conexão ao portal do cliente')
+        cy.contains('Cart')
     }
 
     validarOpcaoDeCadastro() {
-        cy.contains('CADASTRE-SE')
+        cy.contains('Sign in')
     }
 }
 
