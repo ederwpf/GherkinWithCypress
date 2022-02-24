@@ -1,7 +1,7 @@
 #language: pt
 
 Funcionalidade: ACESSAR SITE E REALIZAR CADASTRO
-Cenário: ACESSAR SITE DA RENAULT
+Cenário: ACESSAR SITE
 Dado que o usuário realizou acesso ao site
 Quando a página é carregada
 Então deve ser exibido a opção de se cadastrar
@@ -9,11 +9,11 @@ Então deve ser exibido a opção de se cadastrar
 Cenário: ACESSAR PÁGINA DE CADASTRO
 Dado clicou na botão de cadastro
 Quando a página de cadastro é carregada
-Então devem ser exibidos os campos de IDENTIFICACAO e NUMERO DO CONTRATO
+Então devem ser exibidos os campos de Email e Botão Create Account
 
 Cenário: INICIAR CADASTRO
-Dado que o usuário informou o CPF
-Dado que o usuário informou o NUMERO DO CONTRATO
+Dado que o usuário informou o email
+Dado que o usuário acionou o botão Create an account
 Quando acionar o botão VALIDAR CONTRATO
 Então deve ser exibida a validação
 

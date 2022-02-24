@@ -6,24 +6,25 @@ const dados = require('./../../fixtures/dados.json')
 
 class FluxoCadastro {
     iniciarCadastro() {
-        cy.contains('CADASTRE-SE').click({ force: true });            
+        cy.contains('Sign in').click({ force: true });            
     }
 
     validarPagina() {
-        cy.contains('VALIDAR CONTRATO')
+        cy.contains('Authentication')
     }
 
     validarOpcaoDeCadastro() {
-        cy.contains('Identificação')
-        cy.contains('Número do contrato')
+        cy.contains('Email address')
+        cy.contains('Create an account')
     }
     
-    preencherCPF(){                
-        cy.get(siteElements.campo_CPF_CNPJ).type(dados.cpf)
+    inserirEmail(){                
+        cy.get(siteElements.campo_Email).type(dados.email)
     }
 
-    preencherNumeroDoContrato(){                
-        cy.get(siteElements.campo_NUMERO_CONTRATO).type(dados.numeroContrato)
+    acionarBotaoAccount(){                
+        cy.get(siteElements.botao_Account).click()
+        cy.wait(4000)
     }
 
     validarContrato(){
