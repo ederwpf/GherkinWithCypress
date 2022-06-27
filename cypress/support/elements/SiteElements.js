@@ -1,5 +1,6 @@
 class SiteElements {
-    campo_CPF_CNPJ = '#cpfcnpj';
+    campo_Email = '#email_create';
+    botao_Account = '#SubmitCreate';
     campo_NUMERO_CONTRATO = '#numeroContrato';
     campo_IDADE = '#idade';
     campo_DATA_NASCIMENTO = '#yearBirthday';

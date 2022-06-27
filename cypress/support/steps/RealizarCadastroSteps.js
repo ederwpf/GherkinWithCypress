@@ -27,20 +27,20 @@ When("a página de cadastro é carregada", () => {
     fluxoCadastro.validarPagina();
 })
 
-Then("devem ser exibidos os campos de IDENTIFICACAO e NUMERO DO CONTRATO", () => {
+Then("devem ser exibidos os campos de Email e Botão Create Account", () => {
     fluxoCadastro.validarOpcaoDeCadastro();
 })
 
-Given("que o usuário informou o CPF", () => {
-    fluxoCadastro.preencherCPF();
+Given("que o usuário informou o email", () => {
+    fluxoCadastro.inserirEmail();
 })
 
-Given("que o usuário informou o NUMERO DO CONTRATO", () => {
-    fluxoCadastro.preencherNumeroDoContrato();
+Given("que o usuário acionou o botão Create an account", () => {
+    fluxoCadastro.acionarBotaoAccount();
 })
 
-When("acionar o botão VALIDAR CONTRATO", () => {
-    fluxoCadastro.validarContrato();
+Then("deve ser iniciado o fluxo de criacao de conta", () => {
+    fluxoCadastro.validarPaginaDeCadastro();
 })
 
 Then("deve ser exibida a validação", () => {
