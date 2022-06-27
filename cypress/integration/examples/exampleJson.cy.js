@@ -5,7 +5,7 @@ it('Example of read json file', () => {
     .its('name')
     .should('eq', 'Muffien')
 
-  /*cy.fixture('fileExample').then(nameFixture => {
+  cy.fixture('fileExample').then(nameFixture => {
     expect(name, 'joao2').to.deep.equal(nameFixture)
-  })*/
+  })
 })

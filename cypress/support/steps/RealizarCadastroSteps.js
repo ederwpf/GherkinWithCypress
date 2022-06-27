@@ -39,8 +39,8 @@ Given("que o usuário acionou o botão Create an account", () => {
     fluxoCadastro.acionarBotaoAccount();
 })
 
-When("acionar o botão VALIDAR CONTRATO", () => {
-    fluxoCadastro.validarContrato();
+Then("deve ser iniciado o fluxo de criacao de conta", () => {
+    fluxoCadastro.validarPaginaDeCadastro();
 })
 
 Then("deve ser exibida a validação", () => {

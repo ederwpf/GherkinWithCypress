@@ -14,24 +14,4 @@ Então devem ser exibidos os campos de Email e Botão Create Account
 Cenário: INICIAR CADASTRO
 Dado que o usuário informou o email
 Dado que o usuário acionou o botão Create an account
-Quando acionar o botão VALIDAR CONTRATO
-Então deve ser exibida a validação
-
-Cenário: CONFIRMAR DADOS
-Dado que foi solicitado a confirmação dos dados
-Dado que o usuário acionou o botão de CONFIRMAR DADOS
-Então deve ser exibida a página DADOS IMPORTANTES
-
-Cenário: INSERIR DADOS IMPORTANTES
-Dado que foi exibida a página DADOS IMPORTANTES
-Dado que o usuário inseriu a IDADE e a DATA DE NASCIMENTO
-Dado que o usuário inseriu a QUANTIDADE DE PARCELAS e o VALOR
-Quando for acionado o botão VALIDAR CONTRATO
-Então deve ser exibida notificação de DADOS INVÁLIDOS
-
-Cenário: INSERIR DADOS IMPORTANTES - EXAMPLO DE COMMIT
-Dado que foi exibida a página DADOS IMPORTANTES
-Dado que o usuário inseriu a IDADE e a DATA DE NASCIMENTO
-Dado que o usuário inseriu a QUANTIDADE DE PARCELAS e o VALOR
-Quando for acionado o botão VALIDAR CONTRATO
-Então deve ser exibida notificação de DADOS INVÁLIDOS
+Então deve ser iniciado o fluxo de criacao de conta
